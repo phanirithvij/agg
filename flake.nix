@@ -49,6 +49,7 @@
           version = packageToml.version;
           src = ./.;
           cargoLock.lockFile = ./Cargo.lock;
+          doCheck = true;
         };
 
         apps.default = utils.lib.mkApp { drv = self.packages.${system}.default; };

@@ -27,4 +27,4 @@ jobs:
             nix-${{ runner.os }}-${{ runner.arch }}-default-
             nix-${{ runner.os }}-${{ runner.arch }}-
       - name: Building package
-        run: nix build
+        run: nix build -L
